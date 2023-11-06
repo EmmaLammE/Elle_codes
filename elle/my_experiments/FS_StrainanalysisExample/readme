@@ -1,0 +1,31 @@
+This example runs a "strainanalysis" on the results of 25 steps of the example simulation. See bash script for further info and how to run/postprocess.
+ATTENTION: In order to do this, the example simulation needs to run with FS_fft2elle_strainanalysis.
+
+--> TO RUN THE EXAMPLE:
+
+
+1. Extract data from .zip file in this folder. It contains simulation results from a simple VPFFT   simulation.
+
+2. Run the provided bash script. 
+
+
+The "_plot_" file can then be used to plot or further process the results. 
+E.g. try and run FS_plot_stretchdir -i mysimulation_plot_strainanalysis_steps1-25.elle -u 2 0.01 8 -n
+This creates a file called StretchDirs.ps
+
+Basic work-flow:
+
+1) Run a simulation using FS_fft2elle_strainanalysis -i file.elle -u 1 1 -n (2nd "1" means store incremental strain tensors)
+2) Decide on which steps you wish to perform the strain analysis: In this example step 1-25 (all steps)
+3) Copy all "PosGradTensor" - files from all desired steps and the resulting Elle file of the last step (25) in a new directory, where you will perform the post-processing.
+4) Run FS_postprocess_strainanalysis -i file.elle -u 1 50 1 -n (The last "1" means also write finite strain tensor to txt file)
+5) With this result, run FS_plot_strainanalysis -i file.elle -n (May take a few minutes)
+6) Now, using the output elle-file of FS_plot_strainanalysis, you can plot properties with showelle or plot stretching directions using FS_plot_stretchdir:
+
+U_ATTRIB_A: Vorticity
+U_ATTRIB_B: Vorticity number
+U_ATTRIB_C: min strain (short axis strain ellipse)
+U_ATTRIB_D: max strain (long axis)
+U_ATTRIB_E: max. stretching direction (angle with positive x-axis, mathematical system)
+U_ATTRIB_F: ratio (long/short) strain ellipse axes
+U_VISCOSITY: dilation 

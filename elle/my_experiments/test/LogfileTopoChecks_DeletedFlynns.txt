@@ -1,0 +1,3 @@
+# # # Topology-Check Logfile # # #
+
+0 Flynns removed. (MaxNodes: 3, MinArea: 6.103516e-05)

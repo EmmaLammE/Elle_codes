@@ -1,0 +1,16 @@
+Description of columns in PosGradTensor.txt
+Position gradient tensor F:
+
+    F11  F12
+F = 
+    F21  F22
+
+Column 1.: node ID
+Column 2.: node new x (not repositioned in new model box)
+Column 3.: node new y (not repositioned in new model box)
+Column 4.: dX
+Column 5.: dY
+Column 6.: F11
+Column 7.: F12
+Column 8.: F21
+Column 9.: F22
