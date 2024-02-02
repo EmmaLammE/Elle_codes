@@ -8,4 +8,25 @@ Steps:
 ## Generate Elle File
 1. Download the svg file from https://doi.pangaea.de/10.1594/PANGAEA.933045?format=html#download
 2. Convert .svg to .ppm.
-3. Upload ppm to 
+3. Upload ppm to
+
+### Elle file
+* EULER_3: the euler angle in degrees for each grain, defined in FLYNNS.
+* LOCATION: x - y coordinates of the bnodes
+* UNODES: x - y coordinates of the unodes, i.e. the mesh points
+* Temperature: in degree C
+* BoundaryWidth: 1e-9, unit ??
+* MaxNodeSeparation, MinNodeSeparation: unit m
+* Unit length: 3e-3, unit ??
+* Pressure: 1, unit ??
+* SimpleShearOffset & CumulativeSimpleShear: ??
+* Timestep: 1.25e7, unit sec ??
+
+Euler Angles IC:
+First, use Watson distribution to generate a set of vectors on a sphere in a cartesian coordinate. Second, convert these vectors into Euler angles following Bunge convention. The ranges of the Euler angles (in order) is [0,360], [0,180], [0,360].
+
+
+### ppc.in
+* eqincr, ictrl: ??
+* xlfac0, xlfac1: ??
+* additional parameters to estimate dislocation: ??
