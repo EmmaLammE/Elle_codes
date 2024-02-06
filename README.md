@@ -7,9 +7,10 @@ Steps:
 
 ## Generate Elle File
 1. Download the svg file from https://doi.pangaea.de/10.1594/PANGAEA.933045?format=html#download
-2. 
+2. Use Illustrator to colorcode the grains
 3. Convert .svg to .ppm., use customized python codes in svg to elle section at: https://colab.research.google.com/drive/14TMYTLyAIsBpZ_bvM1uMrQeRWZd6bp6x
 4. Upload ppm to Sherlock, under the folder of stoll_svgppm
+5. open ell.simg. convert the ppm to elle file using '''ppm2elle -i input.ppm'''
 
 ### Elle file
 * EULER_3: the euler angle in degrees for each grain, defined in FLYNNS.
