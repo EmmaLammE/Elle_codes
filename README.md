@@ -7,8 +7,9 @@ Steps:
 
 ## Generate Elle File
 1. Download the svg file from https://doi.pangaea.de/10.1594/PANGAEA.933045?format=html#download
-2. Convert .svg to .ppm., use customized python codes in svg to elle section at: https://colab.research.google.com/drive/14TMYTLyAIsBpZ_bvM1uMrQeRWZd6bp6x
-3. Upload ppm to Sherlock, under the folder of stoll_svgppm
+2. 
+3. Convert .svg to .ppm., use customized python codes in svg to elle section at: https://colab.research.google.com/drive/14TMYTLyAIsBpZ_bvM1uMrQeRWZd6bp6x
+4. Upload ppm to Sherlock, under the folder of stoll_svgppm
 
 ### Elle file
 * EULER_3: the euler angle in degrees for each grain, defined in FLYNNS.
