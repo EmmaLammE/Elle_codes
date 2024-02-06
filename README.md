@@ -16,6 +16,7 @@ Steps:
 1. Open the generated elle file, find the number of grains.
 2. Use the sample_watson section in https://colab.research.google.com/drive/14TMYTLyAIsBpZ_bvM1uMrQeRWZd6bp6x to generate watson distribution for the grains
 3. Copy the generated euler angle to elle file under the section of ```EULER_3```
+4. Note: the euler angles for unodes (mesh points) are not necessary for the initial elle file. But the watson parameter ```k``` can be approximated through the pole plot from: https://doi.pangaea.de/10.1594/PANGAEA.933049?format=html#download
 
 ### Elle file
 * EULER_3: the euler angle in degrees for each grain, defined in FLYNNS.
