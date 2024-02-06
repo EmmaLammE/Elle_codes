@@ -10,7 +10,12 @@ Steps:
 2. Use Illustrator to colorcode the grains
 3. Convert .svg to .ppm., use customized python codes in svg to elle section at: https://colab.research.google.com/drive/14TMYTLyAIsBpZ_bvM1uMrQeRWZd6bp6x
 4. Upload ppm to Sherlock, under the folder of stoll_svgppm
-5. open ell.simg. convert the ppm to elle file using ```ppm2elle -i input.ppm```
+5. open ell.simg. convert the ppm to elle file using ```ppm2elle -i input.ppm```. This will open the showelle window. Save the elle file using save as
+
+### Generate Euler angles
+1. Open the generated elle file, find the number of grains.
+2. Use the sample_watson section in https://colab.research.google.com/drive/14TMYTLyAIsBpZ_bvM1uMrQeRWZd6bp6x to generate watson distribution for the grains
+3. Copy the generated euler angle to elle file under the section of ```EULER_3```
 
 ### Elle file
 * EULER_3: the euler angle in degrees for each grain, defined in FLYNNS.
