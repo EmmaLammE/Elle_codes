@@ -22,6 +22,11 @@ Steps:
 1. unodes are the x-y coordinates for the mesh points. It is stored in elle in a point by point form. Each row is one point, the first column is the ID number of the point, the second and the third columns are the x and y coordinates. They are expanded along y direction. i.e. for y for x.
 2. Copy the generated unodes into elle file under the section of ```UNODES```.
 
+### Post-processing
+1. Open a random elle file in the results folder, under Graphics tab, click save the whole run. This will save all elle files into pngs.
+2. Use the rename.sh to rename the pngs, e.g. https://drive.google.com/file/d/19hLUmpq9HM2zXlMCGSopoJgrffuHT4lk/view?usp=share_link. After this step, grain distribution at each time stamp will be saved as step001.png, step002.png etc..
+3. Use rclone to upload the results folder onto drive.
+
 ### Elle file
 * EULER_3: the euler angle in degrees for each grain, defined in FLYNNS.
 * LOCATION: x - y coordinates of the bnodes
